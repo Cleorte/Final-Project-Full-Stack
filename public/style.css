@@ -1,0 +1,84 @@
+* {
+  margin: 5px;
+  padding: 2px;
+  font-size: 20pt;
+  font-family: Comic, Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: rgb(43, 125, 193);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: monospace;
+  font-size: 30pt;
+}
+
+#main {
+  background-color: rgb(169, 192, 190);
+}
+#addTodo {
+  background-color: rgb(89, 122, 172);
+  border-radius: 12px;
+}
+
+#todoContent {
+  border-radius: 12px;
+}
+
+button {
+  display: block;
+  border-radius: 12px;
+  background-color: #62e366;
+  transition-duration: 0.3s;
+}
+button:hover {
+  background-color: rgb(9, 178, 9);
+}
+
+.todo {
+  background-color: antiquewhite;
+}
+.completed {
+  background-color: rgb(109, 200, 112);
+  border: solid;
+}
+
+div {
+  font-size: 90%; /* make every div font-size 10% smaller than its parent's font-size */
+  margin: 1em;
+}
+.title {
+  font-weight: bold;
+}
+
+.critical {
+  color: red;
+}
+
+#error {
+  font-size: 80%;
+}
+
+#tip {
+  font-size: 18;
+}
+
+#instruction {
+  font-size: 25;
+}
+
+#deleteBtn {
+  float: right;
+  background-color: rgb(209, 22, 22);
+  color: white;
+}
+#deleteBtn:hover {
+  background-color: #ff0000; /* Green */
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

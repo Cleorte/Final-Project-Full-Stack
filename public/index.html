@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="frame">
+    <div class="title">Your ToDo App!</div>
+
+    <div id="main">
+      <div id="loginScreen">
+        <div class="form">
+          Username/Email : <input type="text" id="loginUsername" /> Password :
+          <input type="password" id="loginPassword" />
+          <span></span>
+          <button id="loginBtn">Login</button>
+        </div>
+        <hr />
+        <div>
+          Don't have an account? Click
+          <a href="#" id="registerLink">here</a> to register.
+        </div>
+      </div>
+
+      <div id="registerScreen" class="hidden">
+        <div class="form">
+          Name: <input type="text" id="registerName" />
+          Username:
+          <input type="text" id="registerUsername" />
+          <hr> Email:
+          <input type="text" id="registerEmail" />
+          Password:
+          <input type="text" id="registerPassword" />
+          <span></span>
+          <button id="registerBtn">Register</button>
+        </div>
+        <hr />
+        <div>
+          Already have an account? Click
+          <a href="#" id="loginLink">here</a> to log in.
+        </div>
+      </div>
+
+      <div id="homeScreen" class="hidden">
+        <span></span>
+        <button id="deleteBtn" class="critical">Delete My Profile</button>
+        <p style="text-align: right">
+          Click <a href="#" id="logoutLink">here</a> to Log Out!
+        </p>
+        <h1>Welcome <span id="name"></span>!</h1>
+        <h4 id="instruction">Type your TODO things here:</h4>
+        <div id="addTodo">
+          <textarea id="todoContent" cols="80" rows="3"></textarea>
+          <button id="todoButton">Add Todo</button>
+        </div>
+        <span></span>
+        <h4>Your Current Todo List:</h4>
+        <i id="tip"><b id="tip">TIP:</b> Click once to mark a task as completed. Double
+          click to unmark!
+        </i>
+        <span></span>
+        <div id="todolist"></div>
+      </div>
+      <div id="error" class="critical"></div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
